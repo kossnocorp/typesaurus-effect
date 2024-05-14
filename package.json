@@ -1,0 +1,57 @@
+{
+  "name": "@typesaurus/effect",
+  "version": "0.1.0",
+  "description": "Typesaurus integration with Effect",
+  "main": "index.js",
+  "module": "index.mjs",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "require": {
+        "types": "./index.d.ts",
+        "default": "./index.js"
+      },
+      "import": {
+        "types": "./index.d.mts",
+        "default": "./index.mjs"
+      }
+    }
+  },
+  "scripts": {
+    "test": "vitest run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kossnocorp/typesaurus-effect.git"
+  },
+  "keywords": [
+    "Firebase",
+    "Typesaurus",
+    "Firestore",
+    "Effect"
+  ],
+  "author": "Sasha Koss <koss@nocorp.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kossnocorp/typesaurus-effect/issues"
+  },
+  "homepage": "https://github.com/kossnocorp/typesaurus-effect#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.24.1",
+    "@babel/preset-env": "^7.24.4",
+    "@babel/preset-typescript": "^7.24.1",
+    "@parcel/watcher": "^2.4.1",
+    "babel-plugin-add-import-extension": "^1.6.0",
+    "firebase-admin": "^12.1.0",
+    "firebase-tools": "^13.8.3",
+    "glob": "^10.3.12",
+    "typesaurus": "^10.6.0",
+    "typescript": "^5.5.0-beta",
+    "vitest": "^1.4.0"
+  },
+  "peerDependencies": {
+    "effect": ">=3"
+  }
+}
